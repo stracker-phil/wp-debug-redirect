@@ -58,7 +58,7 @@ class WDevDebug_Redirect {
 
 			if ( ! headers_sent() ) {
 				foreach ( $trace as $ind => $line ) {
-					header( "WPDev-Redirect-Trace[$ind]: $line", false );
+					header( "WPDev-Redirect-Trace-$ind: $line", false );
 				}
 			} else {
 				echo "\n";
